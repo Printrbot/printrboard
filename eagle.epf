@@ -333,6 +333,12 @@ UsedLibrary="printrbot.lbr"
 UsedLibrary="SparkFun.lbr"
 
 [Win_1]
+Type="Control Panel"
+Loc="347 277 1365 1068"
+State=0
+Number=0
+
+[Win_2]
 Type="Schematic Editor"
 Loc="67 212 1385 1027"
 State=0
@@ -372,12 +378,6 @@ PadsSameType=0
 Layer=91
 Views=" 1: 897361 348294 2384285 1699550"
 Sheet=1
-
-[Win_2]
-Type="Control Panel"
-Loc="347 277 1365 1068"
-State=0
-Number=0
 
 [Win_3]
 Type="Board Editor"
