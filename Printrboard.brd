@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.0">
+<eagle version="6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -32,11 +32,11 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="1" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -96,6 +96,7 @@
 <layer number="208" name="208bmp" color="9" fill="10" visible="no" active="yes"/>
 <layer number="209" name="209bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="210" name="210bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="212" name="212bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="213" name="213bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="214" name="214bmp" color="7" fill="1" visible="no" active="yes"/>
@@ -4051,6 +4052,8 @@
 <wire x1="10.246003125" y1="4.37400625" x2="10.246003125" y2="2.974009375" width="0.254" layer="121"/>
 <wire x1="10.246003125" y1="2.974009375" x2="14.645996875" y2="2.974009375" width="0.254" layer="121"/>
 <wire x1="14.645996875" y1="2.974009375" x2="14.645996875" y2="4.37400625" width="0.254" layer="121"/>
+<text x="88.646" y="13.716" size="1.016" layer="25" font="vector" ratio="20">Reset</text>
+<text x="88.646" y="13.716" size="1.016" layer="121" font="vector" ratio="20">Reset</text>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -4843,8 +4846,12 @@ Source: http://www.molex.com</description>
 <smd name="ID" x="0.65" y="2.65" dx="1.4" dy="0.35" layer="1" rot="R90"/>
 <smd name="MT1" x="-4" y="0" dx="1.8" dy="1.9" layer="1" thermals="no"/>
 <smd name="MT2" x="4" y="0" dx="1.8" dy="1.9" layer="1" thermals="no"/>
-<text x="-1.6" y="-0.35" size="0.762" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="0.762" layer="27">&gt;VALUE</text>
+<text x="-5.15" y="-1.2" size="0.762" layer="25" rot="R90">&gt;NAME</text>
+<text x="5.975" y="-1.105" size="0.762" layer="27" rot="R90">&gt;VALUE</text>
+<smd name="MT3" x="-1.45" y="0" dx="1.9" dy="1.9" layer="1" thermals="no"/>
+<smd name="MT4" x="1.45" y="0" dx="1.9" dy="1.9" layer="1" thermals="no"/>
+<smd name="MT5" x="-3.2" y="2.35" dx="1.6" dy="1.4" layer="1" thermals="no"/>
+<smd name="MT6" x="3.2" y="2.35" dx="1.6" dy="1.4" layer="1" thermals="no"/>
 </package>
 <package name="TACTILE_SWITCH_TALL">
 <wire x1="-3" y1="-3" x2="3" y2="-3" width="0.254" layer="21"/>
@@ -5350,7 +5357,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="79.502" y="2.691" size="1.27" layer="25" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="83.971" y="18.666" size="1.27" layer="27"/>
 </element>
-<element name="R37" library="ipc-7351-resistor" package="RESC2012X70N" value="5.49k" x="84.074" y="18.542" smashed="yes">
+<element name="R37" library="ipc-7351-resistor" package="RESC2012X70N" value="5.6k" x="84.074" y="18.542" smashed="yes">
 <attribute name="NAME" x="80.5195" y="19.763" size="1.016" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="82.599" y="16.2545" size="1.27" layer="27" font="vector" ratio="10"/>
 <attribute name="TOLERANCE" value="0.1%" x="84.074" y="18.542" size="1.778" layer="27" display="off"/>
@@ -5624,10 +5631,10 @@ design rules under a new name.</description>
 <via x="32.893" y="32.385" extent="1-16" drill="0.3048"/>
 <via x="22.86" y="19.431" extent="1-16" drill="0.3048"/>
 <via x="28.575" y="23.622" extent="1-16" drill="0.3048"/>
-<via x="96.266" y="3.683" extent="1-16" drill="3.683"/>
-<via x="3.81" y="3.556" extent="1-16" drill="3.683"/>
-<via x="3.302" y="57.658" extent="1-16" drill="3.683"/>
-<via x="96.52" y="57.658" extent="1-16" drill="3.175"/>
+<via x="96.266" y="3.81" extent="1-16" drill="3.683"/>
+<via x="3.81" y="3.81" extent="1-16" drill="3.683"/>
+<via x="3.81" y="57.15" extent="1-16" drill="3.683"/>
+<via x="96.266" y="57.15" extent="1-16" drill="3.175"/>
 <via x="17.272" y="55.118" extent="1-16" drill="0.3048"/>
 <via x="25.908" y="55.118" extent="1-16" drill="0.3048"/>
 <via x="20.066" y="47.244" extent="1-16" drill="0.3048"/>
@@ -5834,6 +5841,10 @@ design rules under a new name.</description>
 <contactref element="X2" pad="MT2"/>
 <contactref element="C7" pad="-"/>
 <contactref element="S1" pad="B2"/>
+<contactref element="X2" pad="MT3"/>
+<contactref element="X2" pad="MT4"/>
+<contactref element="X2" pad="MT5"/>
+<contactref element="X2" pad="MT6"/>
 </signal>
 <signal name="!RESET">
 <contactref element="R12" pad="1"/>
@@ -7820,98 +7831,14 @@ design rules under a new name.</description>
 </signal>
 </signals>
 <errors>
-<approved hash="5,1,005800858f858f58"/>
-<approved hash="5,1,6c138d968309702f"/>
-<approved hash="5,1,c5d8c524492449d8"/>
-<approved hash="5,1,8af36bfd777c85ef"/>
-<approved hash="5,1,af41acba72ba7141"/>
-<approved hash="5,1,ab714dfffcaeb344"/>
-<approved hash="5,1,1ca621fc21fc1ca6"/>
-<approved hash="5,1,689654979c97a096"/>
-<approved hash="5,1,4e167f34bf348e16"/>
-<approved hash="5,1,593457b19fb19134"/>
-<approved hash="5,1,af20ad74698e754b"/>
-<approved hash="5,1,851a878a088a0a1a"/>
-<approved hash="5,1,e2eb066d08f7f4fd"/>
-<approved hash="5,1,3cec3c11b011b0ec"/>
-<approved hash="5,1,0994ef9cf26a016a"/>
-<approved hash="5,1,52ff506b8e6b8cff"/>
-<approved hash="5,1,3391afdb12bd594c"/>
-<approved hash="5,1,829b81d481d4829b"/>
-<approved hash="5,1,d3f8d0c618c61bf8"/>
-<approved hash="5,1,b053b3ec73ec7053"/>
-<approved hash="5,1,a9fad4c21cc261fa"/>
-<approved hash="5,1,20de2a7295cd870f"/>
-<approved hash="5,1,79f97f91309136f9"/>
-<approved hash="5,1,ef11eb7611761511"/>
-<approved hash="5,1,7bce25c05a3bf5b8"/>
-<approved hash="5,1,c9743156bd574575"/>
-<approved hash="5,1,329b36846784639b"/>
-<approved hash="5,1,91bc97f7e9f7efbc"/>
-<approved hash="5,1,41c83f8739ed3ed2"/>
-<approved hash="5,1,e7c6e027dc27dbc6"/>
-<approved hash="5,1,0c9a079e889e839a"/>
-<approved hash="5,1,a575a94ac34acf75"/>
-<approved hash="5,1,56b050b06ab06cb0"/>
-<approved hash="5,1,9575994ba34baf75"/>
-<approved hash="5,1,89a682ae2bae20a6"/>
-<approved hash="5,1,790f7f62db62dd0f"/>
-<approved hash="5,1,e299e6fa1dfa1999"/>
-<approved hash="5,1,a5497d4d7bbb1b38"/>
-<approved hash="5,1,cdfd35d128d0d0fc"/>
-<approved hash="5,1,ab95af88c988cd95"/>
-<approved hash="5,1,543e5270dd70db3e"/>
-<approved hash="5,1,e1b1cd094b627f5d"/>
-<approved hash="5,1,c346c4a749a74e46"/>
-<approved hash="5,1,19081f6f3b6f3d08"/>
-<approved hash="5,1,42a346c4adc4a9a3"/>
-<approved hash="5,1,354c1d767b8dbb0e"/>
-<approved hash="5,1,2dfad5dc58dda0fb"/>
-<approved hash="5,1,ab97af8ac98acd97"/>
-<approved hash="5,1,b43cb277ad77ab3c"/>
-<approved hash="5,1,81b05d011b657f5a"/>
-<approved hash="5,1,834a84a699a69e4a"/>
-<approved hash="5,1,797a7f109b109d7a"/>
-<approved hash="5,1,429f46f95df9599f"/>
-<approved hash="5,1,05b83db93b411bc4"/>
-<approved hash="5,1,edf415d6e8d710f5"/>
-<approved hash="5,1,0b050f1b691b6d05"/>
-<approved hash="5,1,742772687d687b27"/>
-<approved hash="5,1,a1a7cd14cb737f52"/>
-<approved hash="5,1,234924a629a62e49"/>
-<approved hash="5,1,fcbaf7ceaacea1ba"/>
-<approved hash="5,1,fd0af14bfb4bf70a"/>
-<approved hash="5,1,8e9988e512e51499"/>
-<approved hash="5,1,fd75f14aeb4ae775"/>
-<approved hash="5,1,5baf50a457a45caf"/>
-<approved hash="5,1,6d56665e4d5e4656"/>
-<approved hash="5,1,fe79f24aee4ae279"/>
-<approved hash="5,1,2a702c7000700670"/>
-<approved hash="5,1,5e785244de44d278"/>
-<approved hash="5,1,69a562ae63ae68a5"/>
-<approved hash="5,1,6c9d678b688b639d"/>
-<approved hash="5,1,e573e94fc34fcf73"/>
-<approved hash="5,1,56a550a50aa50ca5"/>
-<approved hash="5,1,b56bb954a354af6b"/>
-<approved hash="5,1,29b422bf8bbf80b4"/>
-<approved hash="5,1,de0bc118c118de0b"/>
-<approved hash="5,1,cee9c8bec8becee9"/>
-<approved hash="5,1,ebe85be96366ee1b"/>
-<approved hash="5,1,2ab3c49fa481ba98"/>
-<approved hash="5,1,78d304426e4212d3"/>
-<approved hash="5,1,5e3b5c2b662b643b"/>
-<approved hash="5,1,30303cca06ca0a30"/>
-<approved hash="5,1,d82dc650c6ca53c7"/>
-<approved hash="5,1,fc0ce318c718d80c"/>
-<approved hash="5,1,59d25dd7d9d7ddd2"/>
-<approved hash="5,1,38c326aea8aeb6c3"/>
-<approved hash="5,1,ce65cc9d519d5365"/>
-<approved hash="5,1,6dc373aa33aa2dc3"/>
-<approved hash="5,1,d705cb0d560d4a05"/>
-<approved hash="5,16,b610ab365bc446e2"/>
-<approved hash="5,16,ea54ee106ee26aa6"/>
-<approved hash="5,16,2e112876d884dee3"/>
-<approved hash="5,16,6d57691109110d57"/>
+<approved hash="18,29,76039a054648f17e"/>
+<approved hash="18,29,f6019a0147dcf2aa"/>
+<approved hash="18,29,5e3f3ced254b6cd9"/>
+<approved hash="18,29,e70350c601a5861a"/>
+<approved hash="18,29,0b632bf333fdae48"/>
+<approved hash="18,29,ebf6db820be38a43"/>
+<approved hash="18,29,4819415940254965"/>
+<approved hash="18,29,d75ade1ade4bd70b"/>
 </errors>
 </board>
 </drawing>
