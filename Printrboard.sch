@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -11640,9 +11640,9 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <wire x1="1.85" y1="1.55" x2="1.85" y2="-1.55" width="0.127" layer="21"/>
 <wire x1="1.85" y1="-1.55" x2="-1.85" y2="-1.55" width="0.127" layer="21"/>
 <wire x1="-1.85" y1="-1.55" x2="-1.85" y2="1.55" width="0.127" layer="21"/>
-<smd name="IN" x="-1.5" y="0" dx="4.7" dy="0.7" layer="1" rot="R90"/>
+<smd name="IN" x="-1.75" y="0" dx="4.7" dy="1.2" layer="1" rot="R90"/>
 <smd name="GND" x="0" y="0" dx="4.7" dy="1" layer="1" rot="R90"/>
-<smd name="OUT" x="1.5" y="0" dx="4.7" dy="0.7" layer="1" rot="R90"/>
+<smd name="OUT" x="1.75" y="0" dx="4.7" dy="1.2" layer="1" rot="R90"/>
 <text x="-2.2" y="-2.8" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="3.3" y="-2.8" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
@@ -13585,7 +13585,6 @@ Source: http://www.molex.com</description>
 <part name="GND31" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND39" library="supply1" deviceset="GND" device=""/>
 <part name="C13" library="ipc-7351-capacitor" deviceset="CAPACITOR_" device="0805" value="0.1uF"/>
-<part name="GND7" library="SparkFun" deviceset="GND" device=""/>
 <part name="R12" library="ipc-7351-resistor" deviceset="RESISTOR_" device="0805" value="100k"/>
 <part name="GND10" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND9" library="SparkFun" deviceset="GND" device=""/>
@@ -13608,7 +13607,7 @@ Source: http://www.molex.com</description>
 <part name="GND26" library="SparkFun" deviceset="GND" device=""/>
 <part name="JP17" library="SparkFun" deviceset="M02" device="PTH" value="FAN"/>
 <part name="U$38" library="12v" deviceset="12V" device=""/>
-<part name="JP14" library="SparkFun" deviceset="JUMPER-2" device="PTH" value="ALE"/>
+<part name="JP14" library="SparkFun" deviceset="JUMPER-2" device="PTH" value="BOOT"/>
 <part name="R1" library="ipc-7351-resistor" deviceset="RESISTOR_" device="0805" value="330"/>
 <part name="LED2" library="led" deviceset="LED" device="CHIP-LED0805" value="PWR"/>
 <part name="GND12" library="SparkFun" deviceset="GND" device=""/>
@@ -13770,6 +13769,7 @@ Source: http://www.molex.com</description>
 <part name="USBPWR" library="SparkFun" deviceset="SOLDERJUMPER" device="NO" value=""/>
 <part name="P+19" library="supply1" deviceset="+5V" device=""/>
 <part name="S1" library="printrbot" deviceset="SWITCH-MOMENTARY-2" device="" value="Reset"/>
+<part name="GND7" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13890,7 +13890,6 @@ Source: http://www.molex.com</description>
 <instance part="GND31" gate="1" x="134.62" y="157.48" rot="MR0"/>
 <instance part="GND39" gate="1" x="233.68" y="106.68"/>
 <instance part="C13" gate="G$1" x="25.4" y="111.76" rot="MR90"/>
-<instance part="GND7" gate="1" x="161.29" y="49.53" rot="MR0"/>
 <instance part="R12" gate="G$1" x="166.37" y="110.49" rot="MR90"/>
 <instance part="GND10" gate="1" x="24.13" y="40.64"/>
 <instance part="GND9" gate="1" x="181.61" y="85.09" rot="MR0"/>
@@ -13908,7 +13907,7 @@ Source: http://www.molex.com</description>
 <attribute name="NAME" x="43.18" y="34.29" size="1.778" layer="95"/>
 <attribute name="VALUE" x="52.07" y="34.29" size="1.778" layer="96"/>
 </instance>
-<instance part="R13" gate="G$1" x="161.29" y="57.15" rot="R270"/>
+<instance part="R13" gate="G$1" x="158.75" y="67.31" rot="R90"/>
 <instance part="JP13" gate="G$1" x="223.52" y="144.78" rot="R180"/>
 <instance part="C9" gate="G$1" x="210.82" y="20.32" rot="R90"/>
 <instance part="C10" gate="G$1" x="210.82" y="60.96" rot="R90"/>
@@ -13924,7 +13923,7 @@ Source: http://www.molex.com</description>
 <instance part="GND26" gate="1" x="53.34" y="205.74"/>
 <instance part="JP17" gate="G$1" x="63.5" y="226.06" rot="R180"/>
 <instance part="U$38" gate="G$1" x="53.34" y="228.6"/>
-<instance part="JP14" gate="A" x="163.83" y="68.58" rot="R270"/>
+<instance part="JP14" gate="A" x="165.1" y="59.69" rot="MR90"/>
 <instance part="R1" gate="G$1" x="222.25" y="-22.86" rot="R90"/>
 <instance part="LED2" gate="G$1" x="222.25" y="-33.02"/>
 <instance part="GND12" gate="1" x="34.29" y="-55.88"/>
@@ -14065,7 +14064,7 @@ Source: http://www.molex.com</description>
 <attribute name="VALUE" x="73.66" y="187.96" size="1.778" layer="96"/>
 </instance>
 <instance part="P+5" gate="1" x="166.37" y="120.65"/>
-<instance part="P+6" gate="1" x="161.29" y="76.2"/>
+<instance part="P+6" gate="1" x="158.75" y="76.2"/>
 <instance part="P+7" gate="1" x="213.36" y="81.28"/>
 <instance part="P+8" gate="1" x="213.36" y="40.64"/>
 <instance part="P+9" gate="1" x="233.68" y="116.84" smashed="yes">
@@ -14102,6 +14101,7 @@ Source: http://www.molex.com</description>
 <instance part="USBPWR" gate="1" x="31.75" y="64.77" rot="R90"/>
 <instance part="P+19" gate="1" x="31.75" y="78.74"/>
 <instance part="S1" gate="G$1" x="176.53" y="109.22"/>
+<instance part="GND7" gate="1" x="162.56" y="53.34" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -14200,10 +14200,6 @@ Source: http://www.molex.com</description>
 <wire x1="25.4" y1="102.87" x2="25.4" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <pinref part="C13" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<pinref part="GND7" gate="1" pin="GND"/>
-<pinref part="R13" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="222.25" y1="-38.1" x2="222.25" y2="-40.64" width="0.1524" layer="91"/>
@@ -14506,6 +14502,11 @@ Source: http://www.molex.com</description>
 <wire x1="35.56" y1="102.87" x2="35.56" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="GND51" gate="1" pin="GND"/>
 <pinref part="C36" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="GND7" gate="1" pin="GND"/>
+<pinref part="JP14" gate="A" pin="1"/>
+<wire x1="162.56" y1="55.88" x2="162.56" y2="59.69" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!RESET" class="0">
@@ -15075,13 +15076,13 @@ Source: http://www.molex.com</description>
 </net>
 <net name="ALE" class="0">
 <segment>
-<wire x1="161.29" y1="62.23" x2="135.89" y2="62.23" width="0.1524" layer="91"/>
+<wire x1="158.75" y1="62.23" x2="135.89" y2="62.23" width="0.1524" layer="91"/>
 <label x="139.7" y="62.23" size="1.778" layer="95"/>
 <pinref part="R13" gate="G$1" pin="1"/>
 <pinref part="U6" gate="G$1" pin="PE2_ALE_HWB"/>
 <pinref part="JP14" gate="A" pin="2"/>
-<wire x1="161.29" y1="66.04" x2="161.29" y2="62.23" width="0.1524" layer="91"/>
-<junction x="161.29" y="62.23"/>
+<wire x1="162.56" y1="62.23" x2="158.75" y2="62.23" width="0.1524" layer="91"/>
+<junction x="158.75" y="62.23"/>
 </segment>
 </net>
 <net name="XTAL1" class="0">
@@ -16001,11 +16002,6 @@ Source: http://www.molex.com</description>
 <pinref part="P+5" gate="1" pin="+5V"/>
 </segment>
 <segment>
-<wire x1="161.29" y1="68.58" x2="161.29" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="JP14" gate="A" pin="1"/>
-<pinref part="P+6" gate="1" pin="+5V"/>
-</segment>
-<segment>
 <wire x1="213.36" y1="78.74" x2="213.36" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="2"/>
 <pinref part="P+7" gate="1" pin="+5V"/>
@@ -16160,6 +16156,11 @@ Source: http://www.molex.com</description>
 <pinref part="USBPWR" gate="1" pin="2"/>
 <pinref part="P+19" gate="1" pin="+5V"/>
 <wire x1="31.75" y1="69.85" x2="31.75" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+6" gate="1" pin="+5V"/>
+<pinref part="R13" gate="G$1" pin="2"/>
+<wire x1="158.75" y1="73.66" x2="158.75" y2="72.39" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDDO" class="0">
