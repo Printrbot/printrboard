@@ -13636,8 +13636,8 @@ Source: http://www.molex.com</description>
 <part name="C17" library="ipc-7351-capacitor" deviceset="CAPACITOR_" device="0805" value="0.1uF"/>
 <part name="GND8" library="SparkFun" deviceset="GND" device=""/>
 <part name="U$2" library="12v" deviceset="12V" device=""/>
-<part name="R16" library="ipc-7351-resistor" deviceset="RESISTOR_" device="0805" value="0.1"/>
-<part name="R19" library="ipc-7351-resistor" deviceset="RESISTOR_" device="0805" value="0.1"/>
+<part name="R16" library="ipc-7351-resistor" deviceset="RESISTOR_" device="0805" value="0.11"/>
+<part name="R19" library="ipc-7351-resistor" deviceset="RESISTOR_" device="0805" value="0.11"/>
 <part name="GND11" library="SparkFun" deviceset="GND" device=""/>
 <part name="C19" library="ipc-7351-capacitor" deviceset="CAPACITOR_" device="0805" value="0.22uF"/>
 <part name="R20" library="ipc-7351-resistor" deviceset="RESISTOR_" device="0805" value="10k"/>
@@ -13654,8 +13654,8 @@ Source: http://www.molex.com</description>
 <part name="C22" library="ipc-7351-capacitor" deviceset="CAPACITOR_" device="0805" value="0.1uF"/>
 <part name="GND32" library="SparkFun" deviceset="GND" device=""/>
 <part name="U$3" library="12v" deviceset="12V" device=""/>
-<part name="R24" library="ipc-7351-resistor" deviceset="RESISTOR_" device="0805" value="0.1"/>
-<part name="R25" library="ipc-7351-resistor" deviceset="RESISTOR_" device="0805" value="0.1"/>
+<part name="R24" library="ipc-7351-resistor" deviceset="RESISTOR_" device="0805" value="0.11"/>
+<part name="R25" library="ipc-7351-resistor" deviceset="RESISTOR_" device="0805" value="0.11"/>
 <part name="GND33" library="SparkFun" deviceset="GND" device=""/>
 <part name="C24" library="ipc-7351-capacitor" deviceset="CAPACITOR_" device="0805" value="0.22uF"/>
 <part name="R26" library="ipc-7351-resistor" deviceset="RESISTOR_" device="0805" value="10k"/>
@@ -13672,8 +13672,8 @@ Source: http://www.molex.com</description>
 <part name="C27" library="ipc-7351-capacitor" deviceset="CAPACITOR_" device="0805" value="0.1uF"/>
 <part name="GND41" library="SparkFun" deviceset="GND" device=""/>
 <part name="U$4" library="12v" deviceset="12V" device=""/>
-<part name="R30" library="ipc-7351-resistor" deviceset="RESISTOR_" device="0805" value="0.1"/>
-<part name="R31" library="ipc-7351-resistor" deviceset="RESISTOR_" device="0805" value="0.1"/>
+<part name="R30" library="ipc-7351-resistor" deviceset="RESISTOR_" device="0805" value="0.11"/>
+<part name="R31" library="ipc-7351-resistor" deviceset="RESISTOR_" device="0805" value="0.11"/>
 <part name="GND42" library="SparkFun" deviceset="GND" device=""/>
 <part name="C29" library="ipc-7351-capacitor" deviceset="CAPACITOR_" device="0805" value="0.22uF"/>
 <part name="R32" library="ipc-7351-resistor" deviceset="RESISTOR_" device="0805" value="10k"/>
