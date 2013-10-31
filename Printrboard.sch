@@ -14044,8 +14044,8 @@ Source: http://www.molex.com</description>
 <part name="JP6" library="SparkFun" deviceset="M04" device="POLAR" value="HOTEND"/>
 <part name="JP8" library="SparkFun" deviceset="M03" device="POLAR" value="Y-STOP"/>
 <part name="JP10" library="SparkFun" deviceset="M03" device="POLAR" value="Z-STOP"/>
-<part name="JP2" library="printrbot" deviceset="JP7Q" device="" value="EXP"/>
-<part name="JP11" library="printrbot" deviceset="JP7Q" device="" value="EXP"/>
+<part name="JP2" library="printrbot" deviceset="JP7Q" device="" value="EXP1"/>
+<part name="JP11" library="printrbot" deviceset="JP7Q" device="" value="EXP2"/>
 <part name="JP4" library="printrbot" deviceset="JP3Q" device="" value="ICSP"/>
 <part name="C34" library="ipc-7351-capacitor" deviceset="CAPACITOR_" device="0805" value="0.1uF"/>
 <part name="GND50" library="SparkFun" deviceset="GND" device=""/>
