@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -8,7 +8,7 @@
 </settings>
 <grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="PWR" color="16" fill="1" visible="no" active="yes"/>
 <layer number="3" name="GND" color="17" fill="1" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -8655,17 +8655,13 @@ Source: http://www.molex.com</description>
 <smd name="D+" x="0" y="1.905" dx="1.35" dy="0.4" layer="1" rot="R90"/>
 <smd name="ID" x="0.65" y="1.905" dx="1.35" dy="0.4" layer="1" rot="R90"/>
 <smd name="GND" x="1.3" y="1.905" dx="1.35" dy="0.4" layer="1" rot="R90"/>
-<pad name="GND4" x="-2.5" y="1.905" drill="0.55" diameter="0.95" shape="offset" rot="R180" thermals="no"/>
-<pad name="GND5" x="2.5" y="1.905" drill="0.55" diameter="0.95" shape="offset" thermals="no"/>
+<pad name="GND8" x="-2.5" y="1.905" drill="0.55" diameter="0.95" shape="offset" rot="R180" thermals="no"/>
+<pad name="GND7" x="2.5" y="1.905" drill="0.55" diameter="0.95" shape="offset" thermals="no"/>
 <rectangle x1="2.5" y1="1.605" x2="3.5" y2="2.205" layer="46"/>
 <rectangle x1="-3.5" y1="1.605" x2="-2.5" y2="2.205" layer="46"/>
 <wire x1="-5.4" y1="-2.245" x2="4.6" y2="-2.245" width="0" layer="51"/>
 <wire x1="-3.8" y1="2.105" x2="3.8" y2="2.105" width="0.127" layer="51"/>
 <wire x1="3.8" y1="2.105" x2="3.8" y2="-2.795" width="0.127" layer="51"/>
-<smd name="GND2" x="0" y="-0.795" dx="7.89" dy="1.55" layer="1" thermals="no"/>
-<pad name="GND1" x="-3.5" y="-0.795" drill="0.5" diameter="0.6" stop="no" thermals="no"/>
-<pad name="GND3" x="3.5" y="-0.795" drill="0.5" diameter="0.6" stop="no" thermals="no"/>
-<rectangle x1="-3.75" y1="-1.245" x2="-3.25" y2="-0.345" layer="46"/>
 <rectangle x1="3.25" y1="-1.245" x2="3.75" y2="-0.345" layer="46"/>
 <wire x1="3.8" y1="-2.795" x2="3.8" y2="-2.895" width="0.127" layer="51"/>
 <wire x1="-3.8" y1="2.105" x2="-3.8" y2="-2.795" width="0.127" layer="51"/>
@@ -8679,6 +8675,13 @@ Source: http://www.molex.com</description>
 <wire x1="3.5" y1="-2.795" x2="3.8" y2="-2.795" width="0.1" layer="51"/>
 <text x="-5.08" y="-1.905" size="1.27" layer="27" font="vector" ratio="20" rot="R90">&gt;NAME</text>
 <text x="6.35" y="-1.905" size="1.27" layer="27" font="vector" ratio="20" rot="R90">&gt;VALUE</text>
+<smd name="GND3" x="-1" y="-0.795" dx="1.5" dy="1.55" layer="1" thermals="no"/>
+<smd name="GND4" x="1" y="-0.795" dx="1.5" dy="1.55" layer="1" thermals="no"/>
+<smd name="GND2" x="-2.86" y="-0.795" dx="1.225" dy="1.55" layer="1" rot="R180" thermals="no"/>
+<smd name="GND5" x="2.86" y="-0.795" dx="1.2" dy="1.55" layer="1" rot="R180" thermals="no"/>
+<rectangle x1="-3.75" y1="-1.245" x2="-3.25" y2="-0.345" layer="46"/>
+<pad name="GND1" x="-3.5" y="-0.795" drill="0.5" diameter="0.78" shape="long" rot="R90" thermals="no"/>
+<pad name="GND6" x="3.5" y="-0.795" drill="0.5" diameter="0.78" shape="long" rot="R90" thermals="no"/>
 </package>
 <package name="SOT23-6">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt; 6 lead</description>
@@ -8744,7 +8747,7 @@ Source: http://www.molex.com</description>
 <class number="1" name="power" width="0" drill="0">
 </class>
 </classes>
-<designrules>
+<designrules name="4pcb">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -8789,11 +8792,11 @@ design rules under a new name.</description>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="10mil"/>
+<param name="rlMinPadTop" value="6mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="10mil"/>
+<param name="rlMinPadInner" value="6mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="10mil"/>
+<param name="rlMinPadBottom" value="6mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
 <param name="rlMinViaOuter" value="8mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
@@ -8810,8 +8813,8 @@ design rules under a new name.</description>
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="2mil"/>
-<param name="mlMaxStopFrame" value="3mil"/>
+<param name="mlMinStopFrame" value="6mil"/>
+<param name="mlMaxStopFrame" value="6mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
 <param name="mlViaStopLimit" value="100mil"/>
@@ -9722,12 +9725,9 @@ design rules under a new name.</description>
 <contactref element="J4" pad="6"/>
 <contactref element="J4" pad="4"/>
 <contactref element="U9" pad="2"/>
-<contactref element="J3" pad="GND2"/>
 <contactref element="J3" pad="GND5"/>
-<contactref element="J3" pad="GND3"/>
 <contactref element="J3" pad="GND"/>
 <contactref element="J3" pad="GND4"/>
-<contactref element="J3" pad="GND1"/>
 <contactref element="U10" pad="10"/>
 <via x="91.44" y="41.656" extent="1-16" drill="0.3048"/>
 <contactref element="C42" pad="1"/>
@@ -9754,6 +9754,12 @@ design rules under a new name.</description>
 <vertex x="1.016" y="36.576"/>
 <vertex x="1.016" y="48.26"/>
 </polygon>
+<contactref element="J3" pad="GND1"/>
+<contactref element="J3" pad="GND2"/>
+<contactref element="J3" pad="GND3"/>
+<contactref element="J3" pad="GND6"/>
+<contactref element="J3" pad="GND7"/>
+<contactref element="J3" pad="GND8"/>
 </signal>
 <signal name="!RESET">
 <contactref element="R12" pad="1"/>
@@ -11355,7 +11361,6 @@ design rules under a new name.</description>
 <vertex x="5.08" y="48.006"/>
 <vertex x="5.08" y="34.798"/>
 <vertex x="0" y="29.718"/>
-<vertex x="0" y="29.718"/>
 <vertex x="0" y="14.097"/>
 <vertex x="6.35" y="14.097"/>
 <vertex x="7.366" y="15.113"/>
@@ -11688,7 +11693,9 @@ design rules under a new name.</description>
 <polygon width="0.254" layer="2" spacing="0.254" isolate="0.254">
 <vertex x="100.076" y="41.91"/>
 <vertex x="14.986" y="41.91"/>
-<vertex x="14.986" y="0"/>
+<vertex x="14.986" y="5.334"/>
+<vertex x="17.78" y="5.334"/>
+<vertex x="17.78" y="0"/>
 <vertex x="77.597" y="0"/>
 <vertex x="77.597" y="6.985"/>
 <vertex x="72.009" y="6.985"/>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1212,17 +1212,13 @@ Source: http://www.molex.com</description>
 <smd name="D+" x="0" y="1.905" dx="1.35" dy="0.4" layer="1" rot="R90"/>
 <smd name="ID" x="0.65" y="1.905" dx="1.35" dy="0.4" layer="1" rot="R90"/>
 <smd name="GND" x="1.3" y="1.905" dx="1.35" dy="0.4" layer="1" rot="R90"/>
-<pad name="GND4" x="-2.5" y="1.905" drill="0.55" diameter="0.95" shape="offset" rot="R180" thermals="no"/>
-<pad name="GND5" x="2.5" y="1.905" drill="0.55" diameter="0.95" shape="offset" thermals="no"/>
+<pad name="GND8" x="-2.5" y="1.905" drill="0.55" diameter="0.95" shape="offset" rot="R180" thermals="no"/>
+<pad name="GND7" x="2.5" y="1.905" drill="0.55" diameter="0.95" shape="offset" thermals="no"/>
 <rectangle x1="2.5" y1="1.605" x2="3.5" y2="2.205" layer="46"/>
 <rectangle x1="-3.5" y1="1.605" x2="-2.5" y2="2.205" layer="46"/>
 <wire x1="-5.4" y1="-2.245" x2="4.6" y2="-2.245" width="0" layer="51"/>
 <wire x1="-3.8" y1="2.105" x2="3.8" y2="2.105" width="0.127" layer="51"/>
 <wire x1="3.8" y1="2.105" x2="3.8" y2="-2.795" width="0.127" layer="51"/>
-<smd name="GND2" x="0" y="-0.795" dx="7.89" dy="1.55" layer="1" thermals="no"/>
-<pad name="GND1" x="-3.5" y="-0.795" drill="0.5" diameter="0.6" stop="no" thermals="no"/>
-<pad name="GND3" x="3.5" y="-0.795" drill="0.5" diameter="0.6" stop="no" thermals="no"/>
-<rectangle x1="-3.75" y1="-1.245" x2="-3.25" y2="-0.345" layer="46"/>
 <rectangle x1="3.25" y1="-1.245" x2="3.75" y2="-0.345" layer="46"/>
 <wire x1="3.8" y1="-2.795" x2="3.8" y2="-2.895" width="0.127" layer="51"/>
 <wire x1="-3.8" y1="2.105" x2="-3.8" y2="-2.795" width="0.127" layer="51"/>
@@ -1236,6 +1232,13 @@ Source: http://www.molex.com</description>
 <wire x1="3.5" y1="-2.795" x2="3.8" y2="-2.795" width="0.1" layer="51"/>
 <text x="-5.08" y="-1.905" size="1.27" layer="27" font="vector" ratio="20" rot="R90">&gt;NAME</text>
 <text x="6.35" y="-1.905" size="1.27" layer="27" font="vector" ratio="20" rot="R90">&gt;VALUE</text>
+<smd name="GND3" x="-1" y="-0.795" dx="1.5" dy="1.55" layer="1" thermals="no"/>
+<smd name="GND4" x="1" y="-0.795" dx="1.5" dy="1.55" layer="1" thermals="no"/>
+<smd name="GND2" x="-2.86" y="-0.795" dx="1.225" dy="1.55" layer="1" rot="R180" thermals="no"/>
+<smd name="GND5" x="2.86" y="-0.795" dx="1.2" dy="1.55" layer="1" rot="R180" thermals="no"/>
+<rectangle x1="-3.75" y1="-1.245" x2="-3.25" y2="-0.345" layer="46"/>
+<pad name="GND1" x="-3.5" y="-0.795" drill="0.5" diameter="0.78" shape="long" rot="R90" thermals="no"/>
+<pad name="GND6" x="3.5" y="-0.795" drill="0.5" diameter="0.78" shape="long" rot="R90" thermals="no"/>
 </package>
 <package name="MINISMDC">
 <smd name="P$1" x="-2.286" y="0" dx="3.1496" dy="1.6764" layer="1" rot="R90"/>
@@ -2246,7 +2249,7 @@ Source: http://www.molex.com</description>
 <connects>
 <connect gate="G$1" pin="D+" pad="D+"/>
 <connect gate="G$1" pin="D-" pad="D-"/>
-<connect gate="G$1" pin="GND" pad="GND GND1 GND2 GND3 GND4 GND5"/>
+<connect gate="G$1" pin="GND" pad="GND GND1 GND2 GND3 GND4 GND5 GND6 GND7 GND8"/>
 <connect gate="G$1" pin="VBUS" pad="VBUS"/>
 </connects>
 <technologies>
