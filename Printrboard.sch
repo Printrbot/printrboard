@@ -14161,7 +14161,7 @@ Source: http://www.molex.com</description>
 <text x="30.48" y="238.76" size="1.778" layer="91" font="vector">Mosfets</text>
 <text x="198.12" y="-7.62" size="1.778" layer="91" font="vector">Power Acc</text>
 <text x="6.35" y="-76.2" size="5.08" layer="94" ratio="10">Printrboard</text>
-<text x="222.25" y="-78.74" size="2.54" layer="94">Rev F</text>
+<text x="222.25" y="-78.74" size="2.54" layer="94">Rev F5</text>
 <text x="101.6" y="-71.12" size="3.048" layer="94">Printrbot Electronics</text>
 <text x="64.77" y="-78.74" size="2.032" layer="94">Licensed under the Creative Commons Attributions ShareAlike 3.0 License</text>
 <text x="96.52" y="193.04" size="1.778" layer="91" font="vector">Extension Pin Headers</text>
