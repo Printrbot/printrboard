@@ -14004,7 +14004,6 @@ Source: http://www.molex.com</description>
 <part name="PWR" library="printrbot" deviceset="5566-6" device="" value="PCIE"/>
 <part name="U9" library="printrbot" deviceset="PRTR5V0U4D" device=""/>
 <part name="GND53" library="SparkFun" deviceset="GND" device=""/>
-<part name="GND54" library="SparkFun" deviceset="GND" device=""/>
 <part name="U10" library="printrbot" deviceset="MCP4728" device=""/>
 <part name="GND56" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+21" library="supply1" deviceset="+5V" device=""/>
@@ -14021,7 +14020,6 @@ Source: http://www.molex.com</description>
 <part name="D2" library="printrbot" deviceset="SCH-DIODE" device="SMA" value=""/>
 <part name="Q4" library="ipc-7351-transistor" deviceset="MOSFET-NCH_" device="SOT-23" value="RFP30N06LE"/>
 <part name="U$6" library="12v" deviceset="12V" device=""/>
-<part name="USB-B" library="printrbot" deviceset="USB" device="PTH"/>
 <part name="SD" library="printrbot" deviceset="MICROSD-PP" device=""/>
 <part name="R23" library="ipc-7351-resistor" deviceset="RESISTOR_" device="0805" value="100k"/>
 <part name="GND55" library="SparkFun" deviceset="GND" device=""/>
@@ -14374,7 +14372,6 @@ Source: http://www.molex.com</description>
 <instance part="PWR" gate="-6" x="12.7" y="208.28"/>
 <instance part="U9" gate="G$1" x="119.38" y="-50.8"/>
 <instance part="GND53" gate="1" x="133.35" y="-59.69"/>
-<instance part="GND54" gate="1" x="111.76" y="-25.4"/>
 <instance part="U10" gate="G$1" x="165.1" y="-25.4"/>
 <instance part="GND56" gate="1" x="147.32" y="-43.18"/>
 <instance part="P+21" gate="1" x="147.32" y="-10.16"/>
@@ -14402,7 +14399,6 @@ Source: http://www.molex.com</description>
 <attribute name="NAME" x="208.28" y="177.8" size="1.778" layer="95" rot="MR0"/>
 </instance>
 <instance part="U$6" gate="G$1" x="213.36" y="177.8"/>
-<instance part="USB-B" gate="G$1" x="116.84" y="-22.86"/>
 <instance part="SD" gate="G$1" x="12.7" y="-33.02"/>
 <instance part="R23" gate="G$1" x="71.12" y="213.36" rot="R270"/>
 <instance part="GND55" gate="1" x="71.12" y="205.74"/>
@@ -14822,11 +14818,6 @@ Source: http://www.molex.com</description>
 <wire x1="130.81" y1="-48.26" x2="133.35" y2="-48.26" width="0.1524" layer="91"/>
 <wire x1="133.35" y1="-48.26" x2="133.35" y2="-57.15" width="0.1524" layer="91"/>
 <pinref part="GND53" gate="1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="114.3" y1="-22.86" x2="111.76" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="GND54" gate="1" pin="GND"/>
-<pinref part="USB-B" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="U10" gate="G$1" pin="VSS"/>
@@ -15344,11 +15335,6 @@ Source: http://www.molex.com</description>
 <label x="30.48" y="41.91" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="114.3" y1="-17.78" x2="101.6" y2="-17.78" width="0.1524" layer="91"/>
-<label x="101.6" y="-17.78" size="1.778" layer="95"/>
-<pinref part="USB-B" gate="G$1" pin="D-"/>
-</segment>
-<segment>
 <pinref part="U9" gate="G$1" pin="IO2"/>
 <wire x1="107.95" y1="-53.34" x2="97.79" y2="-53.34" width="0.1524" layer="91"/>
 <label x="97.79" y="-53.34" size="1.778" layer="95"/>
@@ -15378,11 +15364,6 @@ Source: http://www.molex.com</description>
 <wire x1="44.45" y1="39.37" x2="30.48" y2="39.37" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="1"/>
 <label x="30.48" y="39.37" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="114.3" y1="-15.24" x2="101.6" y2="-15.24" width="0.1524" layer="91"/>
-<label x="101.6" y="-15.24" size="1.778" layer="95"/>
-<pinref part="USB-B" gate="G$1" pin="D+"/>
 </segment>
 <segment>
 <pinref part="U9" gate="G$1" pin="IO1"/>
@@ -15648,11 +15629,6 @@ Source: http://www.molex.com</description>
 <pinref part="USBPWR" gate="1" pin="1"/>
 <junction x="31.75" y="57.15"/>
 <label x="50.8" y="44.45" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="114.3" y1="-20.32" x2="101.6" y2="-20.32" width="0.1524" layer="91"/>
-<label x="101.6" y="-20.32" size="1.778" layer="95"/>
-<pinref part="USB-B" gate="G$1" pin="VBUS"/>
 </segment>
 <segment>
 <wire x1="107.95" y1="-48.26" x2="97.79" y2="-48.26" width="0.1524" layer="91"/>
