@@ -5,7 +5,7 @@ Reprap Electronics for the Printrbot
 
 For more info see the Reprap wiki page http://reprap.org/wiki/Printrboard
 
-The BoM with Digikey P/N's is available here: http://goo.gl/hQNEm
+The BoM with Digikey P/N's is available here: https://goo.gl/G4QnvK
 
 This project, and all of its design files (including the layout), is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported](http://creativecommons.org/licenses/by-sa/3.0/) license.
 
